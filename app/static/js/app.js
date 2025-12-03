@@ -228,7 +228,7 @@ async function processOCR() {
         if (response.ok && result.success) {
             showResult(result);
         } else {
-            showError(result.message || result.error || 'Terjadi kesalahan saat memproses gambar');
+            showError(result.detail || result.message || result.error || 'Terjadi kesalahan saat memproses gambar');
         }
     } catch (error) {
         console.error('OCR Error:', error);
