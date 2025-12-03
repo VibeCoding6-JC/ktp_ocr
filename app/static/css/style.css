@@ -1,0 +1,39 @@
+/* Custom CSS for OCR KTP Application */
+/* Most styling is handled by TailwindCSS, this file is for additional customizations */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+
+/* Print styles */
+@media print {
+    header, footer, #dropZone, button {
+        display: none !important;
+    }
+    
+    #resultCard {
+        box-shadow: none !important;
+        border: 1px solid #000 !important;
+    }
+}
